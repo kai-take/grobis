@@ -1,0 +1,111 @@
+#header
+ -h1.header__logo
+  -a
+   -img
+
+#kv
+ -p.kv__copy
+ -btn.kv__btn
+
+#top
+ -p.top__txt
+
+#marketing
+ -h2.marketing__tit
+ -span.marketing__subTit
+ -p.marketing__txt
+ -div.marketing-container
+  -p.marketing-container__txt
+  -div.marketing-box
+   -div.marketing-txtBox
+    -p.marketing-txtBox__txt
+    -p.marketing-txtBox__pic
+     -img
+   -div.marketing-txtBox2
+    -p.marketing-txtBox2__txt
+    -p.marketing-txtBox2__pic
+     -img
+ -div.marketing-columns
+  -p.marketing-columns__tit
+  -ul.marketing-columns__list
+   -li.marketing-columns__item
+    -a
+     -figure.marketing-columns__pic
+      -img
+     -div.marketing-columns__txtBox
+      -p
+      -p
+      -btn
+  -btn.marketing-columns__btn
+
+#about
+ -h2.about__tit
+ -div.about__container
+  -div.about-card
+   -div
+    -figure.about-card__pic
+    -p.about-card__tit
+   -p.about__txt
+
+#price
+ -h2.price__tit
+ -p.price__txt
+ -div.price__container
+  -div.price-card 
+   -p.price__card__tit
+   -p.price__card__txt1
+   -p.price__card__txt2
+   -p.price__card__txt3
+  -div.price-card2 
+   -p.price__card2__tit
+   -p.price__card2__txt1
+   -p.price__card2__txt2
+   -p.price__card2__txt3
+   -div.price__card2__highlight
+ -p.price__注意
+ -btn.price__btn
+
+#footer
+ -small.footer.txt  
+
+
+ボタンはbutton.btn => <button onclick="location.href='./index.html'">テキスト</button>
+ 
+共通要素について
+ボタンは全て共通で、中央寄せも同じ。一番上のボタンだけ、positonを使う。
+コンテンツのQ&Aのカードも共通
+
+
+クラス名案
+content
+inner
+label
+head desc
+flow
+feature
+commentbox
+section > globalContainer > content > mainContainer
+wrapperはレイアウト的に、containerはセマンティックの意味的に
+具体性の追求。
+
+[次やる事]
+perfectpixel使う。
+無理だったら、css命名を振り返って、次への改善を見つける。
+
+[気付き]
+block名はsectionを含んでいないといけない訳じゃない。
+buttonやその他のリンク要素は切っておく。検証の時に間違って押して全て台無しになる可能性がある
+nth-childとnth-of-typeの違い。効かないときはもう一方を試してみる。
+[疑問]
+sectionに直接クラスを当てるかどうか。当てないなら全てのセクションの直下にwrapperを持たせる
+marginやpaddingや背景色含め、参考サイトのセクションを確認してみる。
+[詰まり]
+相対値の計算がずれる
+
+QAボックスが幅を変更すると、下の要素と重なってしまう。
+flexとrelativeで同じ様なレイアウトは出来た。QAの幅の変化に合わせて、marginの調整をすれば崩れはしない。
+ただし、relativeだと二つの要素の幅が画面の幅を超えるので、どちらかはabsoluteが適切。
+画像をabsoluteにするのが一番スマートかも
+
+[経過時間]
+9:30

@@ -1,0 +1,70 @@
+/* ---------------------------------
+ボタン
+--------------------------------- */
+.btn {
+  display: block;
+  width: 500px;
+  padding: 10px 0;
+  margin: auto;
+  font-weight: 600;
+  color: #24387d;
+  text-align: center;
+  text-decoration: none;
+  background: #ffec03;
+  border-radius: 110px;
+}
+
+.btn > span:nth-child(1) {
+  display: block;
+  font-size: 18px;
+}
+
+.btn > span:nth-child(2) {
+  display: block;
+  font-size: 24px;
+}
+
+.section__wrapper {
+  max-width: 1120px;
+  margin: auto;
+}
+
+/* ---------------------------------
+marketing ~ management
+--------------------------------- */
+.section__heading1 {
+  color: #24387d;
+  text-align: center;
+}
+
+.section__heading1 > span:nth-child(1) {
+  display: block;
+  font-size: 24px;
+}
+
+.section__heading1 > span:nth-child(2) {
+  display: inline-block;
+  font-size: 46px;
+  background: linear-gradient(transparent 70%, #ffec03 0%);
+}
+
+/* ---------------------------------
+グロービス学び放題とは ? / 価格プラン
+--------------------------------- */
+.section__heading2 {
+  color: #24387d;
+  text-align: center;
+}
+
+.section__heading2 > span {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(transparent 70%, #ffec03 0%);
+}
+
+.section__txt {
+  font-size: 22px;
+  font-weight: 600;
+}
